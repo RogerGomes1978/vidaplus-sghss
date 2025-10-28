@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>VidaPlus SGHSS</title>
+<style>
+body { font-family: Arial, sans-serif; background-color: #f3f4f6; margin: 0; }
+.container { max-width: 900px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+nav { background-color: #0077cc; color: white; display: flex; justify-content: space-around; padding: 10px; border-radius: 8px; }
+nav a { color: white; text-decoration: none; font-weight: bold; }
+nav a:hover { text-decoration: underline; }
+h1, h2 { text-align: center; color: #333; }
+input, textarea { width: 100%; padding: 8px; margin: 8px 0; border: 1px solid #ccc; border-radius: 5px; }
+button { background-color: #0077cc; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+button:hover { background-color: #005fa3; }
+table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+th { background-color: #e6e6e6; }
+.video { background: #000; color: white; height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 8px; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#login">Login</a>
+  <a href="#paciente">Paciente</a>
+  <a href="#profissional">Profissional</a>
+  <a href="#teleconsulta">Teleconsulta</a>
+  <a href="#admin">Admin</a>
+</nav>
+
+<div class="container" id="login">
+  <h1>VidaPlus SGHSS</h1>
+  <h2>Login</h2>
+  <input type="text" placeholder="Usuário">
+  <input type="password" placeholder="Senha">
+  <button>Entrar</button>
+  <h2>Cadastro de Paciente</h2>
+  <input type="text" placeholder="Nome completo">
+  <input type="email" placeholder="E-mail">
+  <input type="tel" placeholder="Telefone">
+  <button>Cadastrar</button>
+</div>
+
+<div class="container" id="paciente">
+  <h2>Consultas Agendadas</h2>
+  <table>
+    <tr><th>Data</th><th>Hora</th><th>Médico</th><th>Status</th></tr>
+    <tr><td>25/10/2025</td><td>14:00</td><td>Dr. Silva</td><td>Confirmada</td></tr>
+  </table>
+  <h2>Histórico Clínico</h2>
+  <table>
+    <tr><th>Data</th><th>Diagnóstico</th><th>Prescrição</th></tr>
+    <tr><td>10/09/2025</td><td>Gripe</td><td>Paracetamol</td></tr>
+  </table>
+</div>
+
+<div class="container" id="profissional">
+  <h2>Agenda do Médico</h2>
+  <table>
+    <tr><th>Horário</th><th>Paciente</th></tr>
+    <tr><td>09:00</td><td>Maria Souza</td></tr>
+  </table>
+  <h2>Prontuário</h2>
+  <textarea rows="4" placeholder="Anotações do atendimento"></textarea>
+  <input type="text" placeholder="Prescrição">
+  <button>Salvar Prontuário</button>
+</div>
+
+<div class="container" id="teleconsulta">
+  <h2>Teleconsulta</h2>
+  <div class="video">Vídeo do Atendimento</div>
+  <textarea rows="4" placeholder="Anotações"></textarea>
+  <button>Encerrar Consulta</button>
+</div>
+
+<div class="container" id="admin">
+  <h2>Painel Administrativo</h2>
+  <table>
+    <tr><th>Nome</th><th>E-mail</th><th>Função</th></tr>
+    <tr><td>João Silva</td><td>joao@vidaplus.com</td><td>Médico</td></tr>
+  </table>
+</div>
+
+</body>
+</html>
